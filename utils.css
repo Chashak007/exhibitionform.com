@@ -1,0 +1,277 @@
+Footer Section
+footer {
+  background-color: rgba(230, 234, 229, 0.959);
+  color: #000000;
+  text-align: center;
+  padding: 1.5rem 1rem;
+}
+
+footer .icons {
+  margin-top: 1rem;
+}
+
+footer .icons a {
+  color: #000; /* Changed from white to black for visibility on light bg */
+  margin: 0 10px;
+  font-size: 30px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+footer .icons a:hover {
+  color: #00ffc3;
+}
+
+
+/* Form Styling */
+form {
+  max-width: 400px;
+  margin: 0 auto; /* Center horizontally */
+  text-align: center;
+  
+}
+
+/* Headings */
+h1 {
+  text-align: center;
+  font-size: large;
+  font-size: 1.5rem;
+}
+
+
+/* Logo */
+.logo img {
+  image-resolution: 100%;
+  margin: 10px;
+  height: 200px;
+  width: auto;
+  display: block;
+}
+
+/* Hero Section with Video Background */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  color: white;
+}
+
+.bg-video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  z-index: -2;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+.hero .hero-content {
+  position: absolute;
+  bottom: 40px;
+  left: 60px;
+  max-width: 2000px;
+}
+
+.hero .hero-content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.hero .hero-content p {
+  font-size: 18px;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.hero .hero-content ion-icon {
+  margin-right: 10px;
+  font-size: 22px;
+  color: #facc15; /* Yellow */
+}
+
+/* Hero Section (Text Only) */
+.hero-section {
+  background: #f9f9f9;
+  padding: 60px 20px;
+  color: #222;
+}
+
+.hero-section .hero-content {
+  max-width: 1200px;
+  margin: auto;
+  text-align: left;
+}
+
+.hero-section .hero-content h1 {
+  font-size: 5rem;
+  font-weight: bold;
+  line-height: 2.3;
+  margin-bottom: 20px;
+}
+
+.hero-content-med{
+  font-size: 3rem;
+}
+/* Text Highlights */
+.highlight-orange {
+  color: orange;
+  font-size: 5rem;
+}
+
+.highlight-white{
+  font-size: 5rem;
+  color: #ffffff;
+}
+
+.highlight-green {
+  color: rgb(0, 160, 0);
+  font-size: 5rem;
+}
+
+/* Subheading */
+.subheading {
+  font-size: 5rem;
+}
+ 
+.organizer-line {
+  font-size: 2rem;
+  color: #ffffff; /* or your preferred color */
+}
+
+
+.informa-green{
+  color: hsl(231, 100%, 24%);
+  font-weight: bolder;
+  font-size: 3rem;
+}
+.markets{
+  color: green;
+  font-weight: bolder;
+  font-size: 3rem;
+}
+
+/* Event Details */
+.hero-details-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.event-info p {
+  font-size: 4rem;
+  color: white;
+  margin: 5px 0;
+  display: flex;
+  align-items: center;
+}
+
+.event-info-venue{
+font-size: larger;
+font-weight: bold;
+}
+ 
+.event-info-date{
+  font-size: larger;
+  font-weight: bold;
+}
+
+.event-info ion-icon {
+  color: #facc15; /* Yellow */
+  margin-right: 8px;
+}
+
+.hero .hero-content register-btn {
+  position: absolute;
+  bottom: 40px;
+  align-self: flex-start;
+}
+
+.btn-register {
+  background-color: #00d084;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: 0.3s ease;
+}
+
+.btn-register:hover {
+  background-color: #009a62;
+}
+
+
+
+
+
+exhibitors style
+
+
+.exhibitor-section {
+  padding: 3rem 1rem;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.exhibitor-section h2 {
+  text-align: center;
+  font-size: 3.5rem;
+  margin-bottom: 2rem;
+  color: hsl(0, 0%, 0%);
+}
+
+.exhibitor-marquee {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  width: 100%;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.exhibitor-track {
+  display:inline-flex;
+  animation: scroll-left 10s linear infinite;
+}
+
+.exhibitor {
+  flex: 0 0 auto;
+  margin: 0 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.exhibitor img {
+  height: 200px;
+  width: auto;
+  object-fit: contain;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Scroll Animation */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/*about us
+

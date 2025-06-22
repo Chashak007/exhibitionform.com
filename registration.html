@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Register - Informa Markets Exhibition</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="registration.css">
+<body>
+  <header>
+    <div class="logo"><img src="img.png.png" alt=""></div>
+    
+    <nav class="nav-home">
+      <a href="index.html">Home</a>
+    </nav>
+  </header>
+
+  <section class="registration-wrapper">
+  <div class="registration-container">
+
+    <!-- Left: Image -->
+    <div class="registration-box image-box">
+      <img src="hoffice.jpg" alt="Exhibition Image" class="registration-image" />
+    </div>
+
+    <!-- Right: Form -->
+    <div class="registration-box form-box">
+      <h2>Exhibition Registration</h2>
+      <p>Please fill in the details below to register for the event.</p>
+
+      <form id="regForm">
+        <input type="text" placeholder="Full Name" name="name" required />
+        <input type="email" placeholder="Email Address" name="email" required />
+        <input type="tel" placeholder="Phone Number" name="phone" required />
+        <input type="text" placeholder="Organization Name" name="company" />
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+  </div>
+</section>
+<div id="connect" class="connect" >Connect Us</div>
+
+
+  <footer>
+    <p>Email :- amedia@informa.com </p>
+    <p>&copy; 2025 Informa Markets. All rights reserved.</p>
+    <div class="icons">
+      <h1 class="icons icons-Follow">Follow Us</h1>
+      <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+      <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+      <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+      <a href="#"><ion-icon name="logo-google"></ion-icon></a>
+      <a href="#"><ion-icon name="logo-skype"></ion-icon></a>
+      <a href="#"><ion-icon name="logo-linkedin"><ion-icon></a>
+    </div>
+  </footer>
+  <script>
+    document.getElementById("regForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+      alert("Thank you for registering! We'll contact you soon.");
+      this.reset();
+    });
+  </script>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://cdn.jsdelivr.net/npm/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
